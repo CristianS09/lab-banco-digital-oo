@@ -2,7 +2,7 @@
 public class Main {
 
 	public static void main(String[] args) {
-		Cliente venilton = new Cliente();
+		Cliente venilton = new Cliente(null);
 		venilton.setNome("Venilton");
 		
 		Conta cc = new ContaCorrente(venilton);
@@ -13,6 +13,10 @@ public class Main {
 		
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();
+
+		//Utilizando a classe contaCliente
+		ContaCliente contaCliente = new ContaCliente();
+		contaCliente.implimirClientes();
 	}
 
 }
